@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "../sass/vars";
+
+@import "./header.scss";
+@import "./task.scss";
+@import "./add.scss";
+@import "./info.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: $black-clr;
+  font-family: $main-font;
+  background-color: $bg-clr;
+}
+
+.main-page {
+  &__container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 20px;
+    flex-direction: column;
+    min-height: 89vh;
+
+    &.dark {
+      background-color: $black-clr;
+    }
+  }
+
+  &__content {
+    display: flex;
+    width: $main-width;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__tasks {
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 26px;
+    flex-direction: column;
+  }
+
+  &__info {
+    flex: 1;
+    height: auto;
+  }
+}

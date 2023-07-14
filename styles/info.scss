@@ -1,0 +1,84 @@
+@import "../sass/vars";
+
+.info {
+  &__container {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 1px rgba($color: $black-clr, $alpha: 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+    &.dark {
+      box-shadow: 0px 0px 1px 1px rgba($color: $white-clr, $alpha: 0.2);
+    }
+
+    & > .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      & > h2 {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $title-font;
+        color: $title-clr;
+        letter-spacing: 1px;
+
+        &.dark {
+          color: $white-clr;
+        }
+      }
+
+      & > button {
+        all: unset;
+        cursor: pointer;
+
+        &.dark {
+          & > svg {
+            color: $white-clr;
+          }
+        }
+
+        & > svg {
+          width: 22px;
+          height: 22px;
+          color: $title-clr;
+        }
+      }
+    }
+
+    & > p,
+    span {
+      font-size: 16px;
+      font-weight: 400;
+
+      &.dark {
+        color: $white-clr;
+      }
+    }
+
+    span {
+      text-decoration: underline;
+    }
+
+    & > button {
+      all: unset;
+      padding: 10px 20px;
+      background-color: $yellow-clr;
+      width: max-content;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      color: $title-clr;
+
+      &.dark {
+        background-color: $white-clr;
+        color: $black-clr;
+      }
+    }
+  }
+}

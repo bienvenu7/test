@@ -1,0 +1,66 @@
+@import "../sass/vars";
+
+header {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.dark {
+    background-color: $black-clr;
+  }
+
+  & > .content {
+    width: $main-width;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $title-clr;
+
+    & > .logo {
+      font-size: 32px;
+      font-weight: 700;
+      color: $title-clr;
+
+      &.dark {
+        color: $bg-clr;
+      }
+    }
+
+    & > button {
+      all: unset;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      transition: background-color 150ms ease-in;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $yellow-clr;
+      }
+
+      &.dark {
+        &:hover {
+          background-color: transparent;
+        }
+        & > svg {
+          color: $bg-clr;
+        }
+      }
+
+      & > svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

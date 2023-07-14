@@ -1,0 +1,65 @@
+@import "../sass/vars";
+
+.add {
+  &__container {
+    border: 1px solid $title-clr;
+    width: $main-width;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+
+    & > button {
+      all: unset;
+      font-size: 14px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: $yellow-clr;
+      border-radius: 8px;
+      font-weight: 500;
+      color: $title-clr;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    & > label {
+      font-size: 16px;
+      font-family: $title-font;
+      letter-spacing: 1px;
+      font-weight: 500;
+      color: $title-clr;
+      width: 190px;
+
+      &.dark {
+        color: $white-clr;
+      }
+    }
+
+    & > input {
+      all: unset;
+      width: 100%;
+      border-bottom: 1px solid $title-clr;
+      padding: 0 20px 20px 20px;
+      color: $black-clr;
+
+      &.dark {
+        color: $white-clr;
+      }
+    }
+  }
+}
